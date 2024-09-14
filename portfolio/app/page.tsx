@@ -5,15 +5,18 @@ import HeroSection from './components/HeroSection';
 import Section from './components/Section';
 import Footer from './components/Footer';
 import { ParallaxWrapper } from './components/styled';
+import Projects from './components/Projects';
 
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <ParallaxWrapper >
         <HeroSection />
       </ParallaxWrapper>
-      <Section
+      <Projects />
+
+      {/* <Section
         id="about"
         title="About Patrick David"
         content="Patrick David is an entrepreneur, speaker, and author. His mission is to inspire people to take action and live their dreams."
@@ -33,7 +36,7 @@ export default function Home() {
         content="Interested in working together? Get in touch today."
         bg="#f4f4f4"
         color="#000"
-      />
+      /> */}
       <Footer />
     </>
   );

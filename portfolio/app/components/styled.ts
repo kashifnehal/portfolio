@@ -26,30 +26,31 @@ export const ParallaxWrapper = styled.div`
   height:100vh;
   overflow-y:auto;
   overflow-x:hidden;
-  perspective: 10px;
+  // perspective: 10px;
+  border: 8px solid green;
 `
 
 export const HeroWrapper = styled.div`
  postion:relative;
  display:flex;
- justify-content: center;
- align-items: center;
  height: 100%;
- transform-style: preserve-3d;
- z-index:-1;
+ justify-content: space-between;
+ color:white;
+//  transform-style: preserve-3d;
+//  z-index:-1;
   & > img {
   position: absolute;
   height:100%;
   width: 100%;
   object-fit: cover;
   z-index:-1;
-  transform: translateZ(-10px) scale(2)
+  // transform: translateZ(-10px) scale(2)
   }
 `;
 
 
 export const HeroTitle = styled.div`
-  font-size: 4rem;
+  font-size: 10rem;
   margin: 0;
 
   @media (max-width: 768px) {
@@ -82,7 +83,6 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #000;
   color: #fff;
 `;
 
@@ -104,4 +104,53 @@ export const Nav = styled.div`
     }
   }
 `;
+
+export const HeroHeading = styled.div`
+border: 2px yellow solid;
+    display: flex;
+    align-items: end;
+`
+
+export const HeroIntro = styled.div`
+  font-size:40px;
+  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`
+export const HeroPageContent = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+`
+
+export const ContactMe = styled.div`
+  border: 4px solid white;
+  border-radius: 30px;
+  display: flex;
+  padding: 0px 17px;
+  width: fit-content;
+`
+
+export const DateComponent = styled.div``
+export const AboutText = styled.div``
+export const ProjectWrapper = styled.div`
+    // background-color: #141414;
+    border: 10px red solid;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    
+    
+`
+export const ProjectItems = styled.div`
+background-color: white;
+`
+
+export const CardDetails = styled.div``
+export const CardWrapper = styled.div``
+export const CardImage = styled.div``
+export const CardHeading = styled.div``
+
+
 

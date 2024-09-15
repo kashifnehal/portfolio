@@ -137,9 +137,9 @@ export const AboutText = styled.div``
 export const ProjectWrapper = styled.div`
     // background-color: #141414;
     border: 10px red solid;
-    height: 100vh;
     display: flex;
     justify-content: space-around;
+    flex-direction:column;
     
     
 `
@@ -148,9 +148,25 @@ background-color: white;
 `
 
 export const CardDetails = styled.div``
-export const CardWrapper = styled.div``
+export const CardWrapper = styled.div`
+display:flex;`
 export const CardImage = styled.div``
 export const CardHeading = styled.div``
+export const ContributionWrapper = styled.div`
+background: grey;
+display:flex;
+flex-direction:column;
+`
+export const FirstOrgWrapper = styled.div`
+display:flex;
+flex-direction: row-reverse;
+`
+export const SecondOrgWrapper = styled.div`
+display:flex;
+`
+
+
+
 
 
 

@@ -1,23 +1,33 @@
+import { CardDetailsProps } from "./constants"
 import { CardDetails, CardHeading, CardImage, CardWrapper } from "./styled"
 import Image from 'next/image'
 
-const ProjectCards = (details: any) => {
+const ProjectCards = (props: any) => {
+    const { details } = props;
+    const heading = details?.heading
+    
+
+    
     return <CardWrapper>
-        <CardImage>
-            {/* <img src='./heroWrap.jpg' /> */}
-            <Image
-                src="/time.jpeg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-            />
-        </CardImage>
-        <CardDetails>
-            <CardHeading>
-                {details.heading}
-            </CardHeading>
-            <div>{'card subheading'}</div>
-        </CardDetails>
+        {details && (
+            <>
+                <CardImage>
+                    {/* <img src='./heroWrap.jpg' /> */}
+                    <Image
+                        src= {details.image}
+                        width={500}
+                        height={500}
+                        alt="burger"
+                    />
+                </CardImage>
+                <CardDetails>
+                    <CardHeading>
+                        {heading}
+                    </CardHeading>
+                    <div>{details.subheading}</div>
+                </CardDetails>
+            </>
+        )}
     </CardWrapper>
 }
 

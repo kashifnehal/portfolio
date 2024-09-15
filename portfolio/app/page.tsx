@@ -6,6 +6,7 @@ import Section from './components/Section';
 import Footer from './components/Footer';
 import { ParallaxWrapper } from './components/styled';
 import Projects from './components/Projects';
+import Contributions from './components/Contributions';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ParallaxWrapper >
         <HeroSection />
       </ParallaxWrapper>
+      <Contributions />
       <Projects />
 
       {/* <Section

@@ -154,8 +154,11 @@ export const CardImage = styled.div``
 export const CardHeading = styled.div``
 export const ContributionWrapper = styled.div`
 background: grey;
+height: 100vh;
 display:flex;
 flex-direction:column;
+padding: 20px;
+gap: 20px;
 `
 export const FirstOrgWrapper = styled.div`
 display:flex;
@@ -164,7 +167,7 @@ flex-direction: row-reverse;
 export const SecondOrgWrapper = styled.div`
 display:flex;
 `
-
+export const SkillsWrapper = styled.div``
 
 
 

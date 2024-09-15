@@ -1,8 +1,11 @@
 import { CardDetails, CardHeading, CardImage, ContributionWrapper, FirstOrgWrapper, SecondOrgWrapper } from "./styled"
 import Image from 'next/image'
 
+
+
 const Contributions = () => {
     return <ContributionWrapper>
+        
         <FirstOrgWrapper>
             <CardImage>
                 <Image
@@ -22,7 +25,7 @@ const Contributions = () => {
         <SecondOrgWrapper>
             <CardImage>
                 <Image
-                    src="/spicejet.jpeg"
+                    src="/spice.png"
                     width={500}
                     height={500}
                     alt="chegg"

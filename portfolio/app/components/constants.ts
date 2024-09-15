@@ -5,7 +5,7 @@ export interface CardDetailsProps {
     details: string,
 }
 
-export const ProjectDetails: CardDetailsProps[] = [
+export const projectDetails: CardDetailsProps[] = [
     {
         image: "/time.jpeg",
         heading: 'Time Library',
@@ -31,3 +31,8 @@ export const ProjectDetails: CardDetailsProps[] = [
         details: 'Using Python and relevant API’s Works on voice commands, show and speak specific searches on different websites, open apps on command, play music.',
     },
 ]
+
+export const languages = ["JavaScript", "TypeScript", "HTML", "CSS", "C / C++"]
+export const frameworks = ["React", "NextJs", "Redux", "React Native", "GraphQL", "Node.js", "CICD"]
+export const tools = ["Figma", "AWS", "Webpack", "JIRA", "Confluence", "Contentful(CMS)", "DevTools", "Optimizely(A / B Test)",
+    "NewRelic", "Amplitude", "Gitlab", "Cloudfront"]

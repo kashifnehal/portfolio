@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
   <img src='./heroWrap.jpg' />
   <HeroPageContent>
   <HeroHeading className={heroFont.className}>
-    <HeroTitle>SOFTWARE DEVELOPER</HeroTitle>
+    <HeroTitle>THE LOOP</HeroTitle>
     {/* <HeroTitle>DEVELOPER</HeroTitle> */}
   </HeroHeading>
   <HeroIntro>
@@ -27,14 +27,8 @@ const HeroSection: React.FC = () => {
       {monthName}
       <div>available for work</div>
     </DateComponent>
-    <AboutText><div>
-    designer based in Italy. I have many
-    years of experience in consulting in
-    all areas of digital. I love minimal
-    and brutalist design. I love nature,
-    pizza and art.
-    </div>
-    <ContactMe>CONTACT ME</ContactMe>
+    <AboutText>
+    {/* <ContactMe>CONTACT ME</ContactMe> */}
     </AboutText>
   </HeroIntro>
   </HeroPageContent>

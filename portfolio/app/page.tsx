@@ -1,8 +1,6 @@
 "use client"; // Add this directive at the top
 
-import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import Section from './components/Section';
 import Footer from './components/Footer';
 import { ParallaxWrapper } from './components/styled';
 import Projects from './components/Projects';

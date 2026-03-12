@@ -1,8 +1,15 @@
-import { CardDetailsProps } from "./constants"
 import { CardDetails, CardHeading, CardImage, CardWrapper } from "./styled"
 import Image from 'next/image'
 
-const ProjectCards = (props: any) => {
+type ProjectCardsProps = {
+  details: {
+    heading: string;
+    subheading: string;
+    image: string;
+  };
+};
+
+const ProjectCards = (props: ProjectCardsProps) => {
     const { details } = props;
     const heading = details?.heading
     

@@ -6,6 +6,7 @@ import ProjectCards from "./ProjectCards";
     return <ProjectWrapper>
         {projectDetails.map((cards) => {
             return <ProjectCards
+                key={cards.heading}
                 details={cards}
             />
         })}
